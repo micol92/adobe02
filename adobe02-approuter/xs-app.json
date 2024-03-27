@@ -1,0 +1,16 @@
+{
+  "welcomeFile": "adobe02",
+  "authenticationMethod": "route",
+  "logout": {
+    "logoutEndpoint": "/do/logout"
+  },
+  "routes": [
+    {
+      "source": "^/adobeforms_dest/(.*)$",
+      "target": "$1",
+      "authenticationType": "xsuaa",
+      "csrfProtection": false,
+      "destination": "adobeforms_dest"
+    }
+  ]
+}
